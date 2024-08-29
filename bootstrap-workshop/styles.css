@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0eae4;
+}
+#container1 {
+  background-color: white;
+
+  display: none;
+}
+#container2 {
+  background-color: white;
+  display: block;
+}
+
+.discount,
+.card-title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+.img-fluid {
+  height: 100%;
+}
+h3 {
+  color: rgb(11, 107, 9);
+}
+
+.btn {
+  justify-self: center;
+  width: 230px;
+}
+@media (max-width: 320px) {
+  #container2 {
+    display: none;
+  }
+  #container1 {
+    display: block;
+    transform: scale(0.8);
+  }
+  .btn {
+    width: 250px;
+  }
+}

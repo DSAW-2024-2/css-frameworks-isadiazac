@@ -1,0 +1,60 @@
+.maincont {
+  background-color: #f0eae4;
+}
+.container {
+  border-radius: 2%;
+  transform: scale(0.7);
+}
+.image {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+
+#title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.info {
+  margin: 70px;
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+.discount {
+  text-decoration-line: line-through;
+  margin-left: 10px;
+}
+
+#price {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+}
+
+.img_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .img_desktop {
+    display: none;
+  }
+  .img_mobile {
+    display: block;
+    max-height: 250px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+  .container {
+    height: 90%;
+    transform: scale(0.6);
+  }
+}
+@media screen and (max-width: 768px) {
+  .image,
+  .img_desktop {
+    height: 100%;
+  }
+}
